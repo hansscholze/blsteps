@@ -1,0 +1,1 @@
+SUBSYSTEM=="backlight", ACTION=="add", RUN+="/usr/bin/chgrp backlight /sys/class/backlight/$kernel/brightness", RUN+="/usr/bin/chmod 664 /sys/class/backlight/$kernel/brightness"
